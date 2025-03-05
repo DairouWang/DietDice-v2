@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F0F24FFA2D7865B90082D068 /* amplify_outputs.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F24FF92D7865B90082D068 /* amplify_outputs.json */; };
+		F0F24FFD2D7865F80082D068 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */; };
+		F0F24FFF2D7865F80082D068 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = F0F24FFE2D7865F80082D068 /* Amplify */; };
+		F0F250022D7866440082D068 /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = F0F250012D7866440082D068 /* Authenticator */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F0F24FDD2D7854590082D068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,7 @@
 		F0F24FCC2D7854590082D068 /* DietDice-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DietDice-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F24FDC2D7854590082D068 /* DietDice-v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DietDice-v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F24FE62D7854590082D068 /* DietDice-v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DietDice-v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F24FF92D7865B90082D068 /* amplify_outputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplify_outputs.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F24FFD2D7865F80082D068 /* AWSCognitoAuthPlugin in Frameworks */,
+				F0F24FFF2D7865F80082D068 /* Amplify in Frameworks */,
+				F0F250022D7866440082D068 /* Authenticator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 				F0F24FCE2D7854590082D068 /* DietDice-v2 */,
 				F0F24FDF2D7854590082D068 /* DietDice-v2Tests */,
 				F0F24FE92D7854590082D068 /* DietDice-v2UITests */,
+				F0F24FF92D7865B90082D068 /* amplify_outputs.json */,
 				F0F24FCD2D7854590082D068 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +124,9 @@
 			);
 			name = "DietDice-v2";
 			packageProductDependencies = (
+				F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */,
+				F0F24FFE2D7865F80082D068 /* Amplify */,
+				F0F250012D7866440082D068 /* Authenticator */,
 			);
 			productName = "DietDice-v2";
 			productReference = F0F24FCC2D7854590082D068 /* DietDice-v2.app */;
@@ -195,6 +210,10 @@
 			);
 			mainGroup = F0F24FC32D7854590082D068;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				F0F250002D7866440082D068 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F0F24FCD2D7854590082D068 /* Products */;
 			projectDirPath = "";
@@ -212,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F24FFA2D7865B90082D068 /* amplify_outputs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +572,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.46.0;
+			};
+		};
+		F0F250002D7866440082D068 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-authenticator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		F0F24FFE2D7865F80082D068 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		F0F250012D7866440082D068 /* Authenticator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0F250002D7866440082D068 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
+			productName = Authenticator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0F24FC42D7854590082D068 /* Project object */;
 }
