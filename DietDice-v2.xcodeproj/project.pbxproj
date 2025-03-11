@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0D8B5452D8018860062D1F0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8B5432D8018860062D1F0 /* Todo.swift */; };
+		F0D8B5462D8018860062D1F0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8B5422D8018860062D1F0 /* AmplifyModels.swift */; };
+		F0D8B5472D8018860062D1F0 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8B5442D8018860062D1F0 /* Todo+Schema.swift */; };
+		F0D8B5492D8018CF0062D1F0 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = F0D8B5482D8018CF0062D1F0 /* AWSAPIPlugin */; };
 		F0F24FFA2D7865B90082D068 /* amplify_outputs.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F24FF92D7865B90082D068 /* amplify_outputs.json */; };
 		F0F24FFD2D7865F80082D068 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */; };
 		F0F24FFF2D7865F80082D068 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = F0F24FFE2D7865F80082D068 /* Amplify */; };
@@ -31,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0D8B5422D8018860062D1F0 /* AmplifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		F0D8B5432D8018860062D1F0 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		F0D8B5442D8018860062D1F0 /* Todo+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Schema.swift"; sourceTree = "<group>"; };
 		F0F24FCC2D7854590082D068 /* DietDice-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DietDice-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F24FDC2D7854590082D068 /* DietDice-v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DietDice-v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F24FE62D7854590082D068 /* DietDice-v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DietDice-v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D8B5492D8018CF0062D1F0 /* AWSAPIPlugin in Frameworks */,
 				F0F24FFD2D7865F80082D068 /* AWSCognitoAuthPlugin in Frameworks */,
 				F0F24FFF2D7865F80082D068 /* Amplify in Frameworks */,
 				F0F250022D7866440082D068 /* Authenticator in Frameworks */,
@@ -86,6 +94,9 @@
 		F0F24FC32D7854590082D068 = {
 			isa = PBXGroup;
 			children = (
+				F0D8B5422D8018860062D1F0 /* AmplifyModels.swift */,
+				F0D8B5432D8018860062D1F0 /* Todo.swift */,
+				F0D8B5442D8018860062D1F0 /* Todo+Schema.swift */,
 				F0F24FCE2D7854590082D068 /* DietDice-v2 */,
 				F0F24FDF2D7854590082D068 /* DietDice-v2Tests */,
 				F0F24FE92D7854590082D068 /* DietDice-v2UITests */,
@@ -127,6 +138,7 @@
 				F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */,
 				F0F24FFE2D7865F80082D068 /* Amplify */,
 				F0F250012D7866440082D068 /* Authenticator */,
+				F0D8B5482D8018CF0062D1F0 /* AWSAPIPlugin */,
 			);
 			productName = "DietDice-v2";
 			productReference = F0F24FCC2D7854590082D068 /* DietDice-v2.app */;
@@ -256,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D8B5452D8018860062D1F0 /* Todo.swift in Sources */,
+				F0D8B5462D8018860062D1F0 /* AmplifyModels.swift in Sources */,
+				F0D8B5472D8018860062D1F0 /* Todo+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +608,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F0D8B5482D8018CF0062D1F0 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
 		F0F24FFC2D7865F80082D068 /* AWSCognitoAuthPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F0F24FFB2D7865F80082D068 /* XCRemoteSwiftPackageReference "amplify-swift" */;

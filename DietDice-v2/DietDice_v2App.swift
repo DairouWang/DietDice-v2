@@ -9,12 +9,15 @@ import Amplify
 import Authenticator
 import AWSCognitoAuthPlugin
 import SwiftUI
+import AWSAPIPlugin
+
 
 @main
 struct MyApp: App {
     init() {
         do {
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
             try Amplify.configure(with: .amplifyOutputs)
         } catch {
             print("Unable to configure Amplify \(error)")
